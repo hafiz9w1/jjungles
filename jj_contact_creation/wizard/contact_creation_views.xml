@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <record id="contact_creation_wizard_form" model="ir.ui.view">
+        <field name="name">contact.creation.wizard.form</field>
+        <field name="model">contact.creation</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="row">
+                        <group>
+                            <group>
+                                <field name="name" />
+                            </group>
+                        </group>
+                    </div>
+                </sheet>
+                <footer>
+                    <button 
+                        type="object"
+                        string="Save"
+                        name="action_create_contact" 
+                        class="fa fa-cloud-upload fa-fw" 
+                        data-hotkey="q"
+                    />
+                    <button 
+                        type="object"
+                        special="cancel" 
+                        string="Discard" 
+                        class="o_form_button_cancel btn btn-light py-0" 
+                        data-hotkey="x"
+                    />
+
+                </footer>
+            </form>
+        </field>
+    </record>
+
+  </data>
+</odoo>
